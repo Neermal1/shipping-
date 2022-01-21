@@ -1,0 +1,33 @@
+{
+    "name": "bsdev/shipping",
+    "license": "MIT",
+    "version": "1.0",
+    "description": "Simple package for shipping",
+    "authors": [
+        {
+            "name": "Bharat Shrestha",
+            "email": "bharatstha97@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Bsdev\\Shipping\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "bsdev/theme": "^1.0",
+        "livewire/livewire": "^2.5"
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bsdev\\Shipping\\ShippingServiceProvider"
+            ],
+            "aliases": {
+                "Shipping": "Bsdev\\Shipping\\Facades\\ShippingFacade"
+            }
+        }
+    }
+}
